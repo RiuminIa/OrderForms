@@ -1,0 +1,355 @@
+@font-face {
+    font-family: Aileron-Bold;
+    src: url("../fonts/Aileron-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: Aileron-LightItalic;
+    src: url("../fonts/Aileron-LightItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: Aileron-Regular;
+    src: url("../fonts/Aileron-Regular.otf") format("opentype");
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 338px;
+} 
+article h1{
+    position: relative;
+    top: 19px;
+    color: white;
+}
+legend{
+    font-size: 20px;
+    color: #da8d21;
+}
+h1,b,h2,h3{
+    font-family: Aileron-Bold;
+
+}
+p{
+    font-family:Aileron-Regular;
+}
+q{
+    font-family:Aileron-LightItalic;
+    color: white;
+}
+
+.slog{
+    position: absolute;
+    top: 79px;
+    left: 93px;
+}
+.logo{
+    position: absolute;
+    float: left;
+    left: 4px;
+    top: 5px;
+    width: 100px;
+}
+header h1{
+    margin: 0;
+    position: relative;
+    top: 29px;
+    padding: 0;
+    width: 100%;
+    color: white;
+}
+header{
+    top: 9px;
+    position: relative;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #403440;
+    height: auto;
+    padding: 0;
+    min-width: 343px;
+    height: 103px;
+    text-align: center;
+}
+article{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #403440;
+    border-radius: 10px;
+    text-align: center;
+}
+fieldset{
+    height: 160px;
+    margin: 15px;
+    border: solid 5px #b6b5b5;
+    border-radius: 10px;
+    color: white;
+    padding-bottom: 54px;
+}
+fieldset b{
+    border-bottom: double 6px green;
+}
+
+
+form{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+}
+header select{
+    border-radius: 30px;
+    width: 196px;
+    text-align: center;
+    height: 45px;
+    position: relative;
+    top: 10px;
+    margin: 0 8px 0 15px;
+}
+.furSelect{
+    width: 30%;
+    text-align: center;
+    font-size:  1.2em;;
+    font-family: 'Aileron-Regular';
+    margin: 11px;
+    margin: -2px 10px 8px 6px;
+    min-width: 166px;
+    border-radius: 8px;
+    height: 26px;
+}
+
+.none{
+    visibility: hidden;
+    display: none;
+    
+} 
+#vol{
+    width: 50px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 18px;
+}
+#orderSum{
+    visibility: hidden;
+    position: relative;
+    top: 1px;
+    margin: 0px;
+}
+#orderValid{
+    position: relative;
+    top:10px;
+    min-width: 300px;
+}
+.container{
+    position: relative;
+    top:15px;
+    width: 75%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 2px #403440;
+    padding: 27px;
+    border-radius: 18px;
+  }
+  .container h2{
+    background-color: #403440;
+    padding: 11px;
+    color: white;
+    border-radius: 13px;
+    margin-top: -5px;
+  }
+  .container input[type="text"], input[type="tel"], input[type="email"]
+  {
+    width: 90%;
+    height: 30px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #897b7b;
+    color: #5f4f4f;
+    font-size: 1.2em;
+  }
+
+  .validation{
+    position: relative;
+    visibility: hidden;
+    color:red;
+}
+.forForm{
+    text-align: center;
+}  
+ 
+
+.container input[type="number"]{
+    width: 90%;
+    height: 30px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #897b7b;
+    color: #5f4f4f;
+  
+    margin: 0;
+}
+input[type='number']::-webkit-inner-spin-button { 
+    opacity: 1;
+    height: 35px;
+  }
+
+  #forma{
+    font-family:'Aileron-Regular';
+  }
+
+input[type="date"]{
+    width: 90%;
+    height: 30px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #897b7b;
+    color: #5f4f4f;
+}
+
+
+.forForm{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    
+}
+#dateAgeFrm{
+    margin-top: -21px;    
+}
+.forFrm{
+    width: 50%;
+    min-width: 215px;
+    text-align: -webkit-left;
+}
+#forFormMail{
+    justify-content: left;
+}
+#agefrm input[type="number"]{
+    width:20%;
+}
+#datefrm input[type="date"]{
+    width:40%;
+    font-size: 1.2em;
+}
+#btn{
+    text-align: left;
+}
+#phonefrm input[type="text"]{
+    min-width: 119px;
+    width: 30%;
+}
+#cods {
+    height: 40px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #897b7b;
+    color: #5f4f4f;
+
+}
+input[type="radio"]  {
+    border: 6px solid black;
+}
+
+#createdDiv{
+    text-align: left;
+}
+#adresSelect{
+    height: 40px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #897b7b;
+    color: #5f4f4f;
+}
+#btn{
+    margin-bottom: 10px;
+}
+#forFormAdress{
+    min-width:100px;
+}
+#hid{
+    visibility: hidden;
+    position: relative;
+    color: black;
+    top: -17px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(64, 52, 64,0.4);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: left;
+    border-radius: 23px;
+  }
+  
+#finishButton{
+    margin: 8px;
+    width: 100px;
+    height: 30px;
+    background-color: #4b804e;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  #finalDiv{
+    position: relative;
+    top: -34px;
+  }
+  #finalDiv button{
+    font-size: 1.1em;
+    width: 123px;
+    background-color: #403440;
+    padding-top: 2px;
+    font-family: 'Aileron-Regular';
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+#subm{
+    display:none;
+}
+
+@media screen and (max-width: 768px) {
+    .forForm {
+        flex-direction:column;
+    }
+    .forFrm{
+        width: 90%;
+        text-align: left;
+    }
+  }
+  @media screen and (max-width: 968px) {
+    #forFormAdress {
+        flex-direction:column;
+  }
+}

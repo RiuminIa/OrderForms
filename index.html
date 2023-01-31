@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Fur coin</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
+    <body>
+        <header>
+          <img src="images/logo.png" class="logo" alt="Fur coin logo">
+            <h1>FUR COIN</h1>
+          <q class="slog">WE ARE APPRECIATE YOUR FUR</q>
+        </header>
+        <article >
+            <h1>Here you can choose fur</h1>
+            <form action="#" method="post" id="furForm">
+              
+              <fieldset>
+              <select id="catordog" class="furSelect">
+                  <option value="none" class="none">Choose pet</option>
+                  <option value="cat">Cat</option>
+                  <option value="dog">Dog</option>
+              </select>
+              <select id="breeds" class="furSelect">
+                <option value="none" class="none">Choose breed</option>
+                
+              </select>
+              <select id="hair" class="furSelect">
+                <option value="none" class="none">Choose length</option>
+                
+              </select>
+              <select id="color" class="furSelect">
+                <option value="none" class="none">Choose color</option>
+                
+              </select> 
+              <br>    
+              <label for="vol">Weight(10kg max):</label><br>
+              <input type="number" id="vol" name="vol" min="0.5" step="0.5" max="10" value="1">
+              <br>
+              <h2 id=orderSum>Order cost is: <b > </b></h2>
+              <strong class="validation" id="orderValid"></strong>
+            </fieldset>
+            </form>
+        </article>
+        <div class="container" id="basicContainer">
+          <h2> Product Order Form</h2>
+        <form action="https://form2mail.hynix.sk/form2mail.php" enctype="multipart/form-data" method="post" id="forma" name="basicForm" onsubmit="return validateForm()">
+            <input type="hidden" name="apikey" value="642cb915beeaa85a60efdaf5ecce3c50">
+                <input type="hidden"  name="from" value="">
+                <input type="hidden" name="sender" value="Riumin Iakov Fur coin">
+                <input type="hidden" id="toMail" name="to" value="jacob11.ho@gmail.com">
+                <input type="hidden" name="subject" value="Riumin Iakov">
+                <input type="hidden" name="redirectOk" value="">
+                <input type="hidden" name="redirectFalse" value="">
+          <div class="forForm">
+          <div class="forFrm">
+            <label for="Name" class="labs" id="labelName"> Name*</label>
+            <input type="text" name="Name" id="name" placeholder = 'Your first name'><br>
+            <strong class="validation" id="validName"></strong>
+          </div>
+          <div class="forFrm">
+            <label for="Last Name" class="labs"> Last name*</label>
+            <input type="text" name="Last name"  id="lastname" placeholder = 'Your last name'><br>
+            <strong class="validation" id="validlast"></strong>
+          </div>
+          </div>
+          <br>
+          <div class="forForm" id="dateAgeFrm">
+          <div class="forFrm" id="agefrm" >
+            <label for="Age" class="labs"> Age*</label><br>
+            <input type="number" name="Age" id="age" ><br>
+            <strong class="validation" id="validage"></strong>
+          </div>
+          <div class="forFrm" id="datefrm">
+            <label for="Date of birthday" class="labs"> Date of birthday*</label><br>
+            <input type="date" name="Date of birthday"  id="date"><br>
+            <strong class="validation" id="validdate"></strong>
+          </div>
+          </div>
+          <div class="forForm" id="forFormMail">
+            <div class="forFrm" id="mailfrm" >
+              <label for="Email" class="labs"> Email*</label>
+              <input type="email" name="Email" id="email" placeholder = "your@mail.com"><br>
+              <strong class="validation" id="validmail"></strong>
+            </div>
+          </div>
+          <div class="forForm" id="forFormAdress">
+            <div class="forFrm" id="phonefrm">
+              <label for="Cods" class="labs">Phone number</label><br>
+              <select id="cods" name="t=Telephone cod">
+                <option value="1" class="none">code</option>
+                <option value="421" class="">421</option>
+                <option value="231" class="">231</option>
+                <option value="21" class="">21</option>
+                <option value="321" class="">321</option>
+                <option value="12" class="">12</option>
+                <option value="234" class="">234</option>
+                <option value="124" class="">124</option>
+                <option value="532" class="">532</option>
+                <option value="324" class="">324</option>
+                <option value="432" class="">432</option>
+                <option value="12" class="">12</option>
+                <option value="432" class="">432</option>
+            </select>
+              <input type="text" name="Phone number" id="phone" placeholder ="000 000 0000" disabled><br>
+              <strong class="validation" id="validphone"></strong>
+            </div>
+            <div class="forFrm" id="radiob">
+              <div id="btn">
+                <label for="Where" class="butn">Where do you want to pick up the order:*</label><br>
+                <input type="radio" name="Wheres" value="shop" > In the shop<br>
+                <input type="radio" name="Wheres" value="home"> Home delivery<br>
+                <strong class="validation" id="validWhere"></strong>
+              </div>
+            </div>
+          </div>
+          <div class="forForm">
+            <div class="forFrm" id="checkbtn">
+              <label for="checkbox" class="checki">How did you hear about us:</label><br>
+              <input type="checkbox" name="checkbox1" value="paper" > newspaper<br>
+              <input type="checkbox" name="checkbox2" value="internet" > internet<br>
+              <input type="checkbox" name="checkbox3" value="people" > friends<br>
+              <input type="checkbox" name="checkbox4" value="social" > social network<br>
+              <input type="checkbox" name="checkbox5" value="other"> other:<br>
+            </div>
+            <div class="forFrm" id="checkbtn">
+              <label for="textbottom" class="textar">Your wishes for the order</label><br>
+              <textarea id="textbtm" maxlength=50 name="Textarea"></textarea><br>
+              <input type="button" name="ButtonMe" id="checkme" value="Check me"></button>
+              <p id="hid"> Iakov Riumin</p>
+            </div>  
+          </div>
+                <input type="submit" value="secretB" id="subm">
+          </div>
+        </form>
+        <div class="forForm" id="finalDiv">
+          <div class="finalbtn">
+              <label for="final" class="fbn">Click to complete order</label><br>
+              <button id="myBtn" name="final">order</button><br>
+              <strong class="validation" id="validFinal"></strong>
+          </div>
+        </div>
+      
+        </div>
+        <div id="myModal" class="modal">
+        </div>
+        <script src="scrypts/scrypt1.js">
+
+        </script>
+        <script src="scrypts/scrypt2.js">
+
+        </script>
+    </body>
+    </html>
